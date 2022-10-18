@@ -4,9 +4,11 @@ float rectangle = 15;
 float vit = 8;
 
 int mode = 1;
+ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
+
 
 void setup() {
-  fullScreen(P3D);
+  fullScreen(P3D,2);
   //size(1500, 360, P3D);
   s2 = new Analysor(this,"01 On Repeat.mp3",60);
   //s2 = new Analysor(this, "Bjarki_-_I_Wanna_Go_Bang_TRIP003.mp3", 60);
@@ -18,7 +20,7 @@ void setup() {
 void draw() {
   background(0);
   s2.runAnalyse();
-  s2.drawPreAnalyse(0, 0, width, 300);
+  
   switch(mode){
     //default:             // Default executes if the case names
     //  visu08();
@@ -26,40 +28,78 @@ void draw() {
     //break;
     case 1:
       visu01();
-      println("One");
       break;
     case 2:
       visu02();
-      println("Two");
       break;
     case 3:
       visu03();
-      println("Three");
       break;
     case 4:
       visu04();
-      println("Four");
+      //println("Four");
       break;
     case 5:
       visu05();
-      println("Five");
+      //println("Five");
       break;
     case 6:
       visu06();
-      println("Six");
+      //println("Six");
       break;
     case 7:
       visu07();
-      println("Seven");
+      //println("Seven");
       break;
     case 8:
       visu08();
-      println("Eight");
+      //println("Eight");
       break;
     case 9:
       visu09();
-      println("Nine");
+      //println("Nine");
       break;
+    case 10:
+      visu10();
+      //println("Nine");
+      break;
+    case 11:
+      visu11();
+      //println("Nine");
+      break;
+    case 12:
+      visu12();
+      //println("Nine");
+      break;
+    case 13:
+      visu13();
+      //println("Nine");
+      break;
+    case 14:
+      visu14();
+      //println("Nine");
+      break;
+    case 15:
+      visu15();
+      //println("Nine");
+      break;
+    //case 16:
+    //  visu16();
+    //  //println("Nine");
+    //  break;
+    case 17:
+      visu17();
+      //println("Nine");
+      break;
+    //case 18:
+    //  visu18();
+    //  //println("Nine");
+    //  break;
+    //case 19:
+    //  visu19();
+    //  //println("Nine");
+    //  break;
+
   }
 
   //pushMatrix();
@@ -106,5 +146,5 @@ void draw() {
    
    
 
-
+s2.drawPreAnalyse(0, 0, width, 300);
 }
