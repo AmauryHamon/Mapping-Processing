@@ -3,7 +3,7 @@ Analysor s2;
 float rectangle = 15;
 float vit = 8;
 
-int mode =1;
+int mode = 1;
 
 void setup() {
   fullScreen(P3D);
@@ -19,30 +19,71 @@ void draw() {
   background(0);
   s2.runAnalyse();
   s2.drawPreAnalyse(0, 0, width, 300);
-
+  switch(mode){
+    //default:             // Default executes if the case names
+    //  visu08();
+    //  println("Default");   // don't match the switch parameter
+    //break;
+    case 1:
+      visu01();
+      println("One");
+      break;
+    case 2:
+      visu02();
+      println("Two");
+      break;
+    case 3:
+      visu03();
+      println("Three");
+      break;
+    case 4:
+      visu04();
+      println("Four");
+      break;
+    case 5:
+      visu05();
+      println("Five");
+      break;
+    case 6:
+      visu06();
+      println("Six");
+      break;
+    case 7:
+      visu07();
+      println("Seven");
+      break;
+    case 8:
+      visu08();
+      println("Eight");
+      break;
+    case 9:
+      visu09();
+      println("Nine");
+      break;
+  }
 
   //pushMatrix();
-
-  if (mode==1) {
-    visu1();
-  }else if(mode==2){
-    visu2();
-  }else if(mode==3){
-    visu3();
-  }else if (mode==4){
-    visu4();
-  }else if (mode==5){
-    visu5();
-  }else if (mode==6){
-    visu6();
-  }else if(mode==7){
-    visu7();
-  }else if(mode==8){
-    visu8();
-  }else if(mode==9){
-    visu9();
-  }else if(mode==10){
-    visu10();
+  
+  //if (mode==1) {
+  //  visu01();
+  //}else if(mode==2){
+  //  visu02();
+  //}else if(mode==3){
+  //  visu03();
+  //}else if (mode==4){
+  //  visu04();
+  //}else if (mode==5){
+  //  visu05();
+  //}else if (mode==6){
+  //  visu06();
+  //}else if(mode==7){
+  //  visu07();
+  //}else if(mode==8){
+  //  visu08();
+  //}else if(mode==9){
+  //  visu09();
+  //}else if(mode==10){
+  //  visu10();
   //}else if(mode==11){
   //  visu11();
   //}else if(mode==12){
@@ -61,7 +102,7 @@ void draw() {
   //  visu18();
   //}else if(mode==19){
   //  visu19();
-  }
+  //}
    
    
 
