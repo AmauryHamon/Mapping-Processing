@@ -37,59 +37,45 @@ void draw() {
       break;
     case 4:
       visu04();
-      //println("Four");
       break;
     case 5:
       visu05();
-      //println("Five");
       break;
     case 6:
       visu06();
-      //println("Six");
       break;
     case 7:
       visu07();
-      //println("Seven");
       break;
     case 8:
       visu08();
-      //println("Eight");
       break;
     case 9:
       visu09();
-      //println("Nine");
       break;
     case 10:
       visu10();
-      //println("Nine");
       break;
     case 11:
       visu11();
-      //println("Nine");
       break;
     case 12:
       visu12();
-      //println("Nine");
       break;
     case 13:
       visu13();
-      //println("Nine");
       break;
     case 14:
       visu14();
-      //println("Nine");
       break;
     case 15:
       visu15();
-      //println("Nine");
       break;
-    //case 16:
-    //  visu16();
-    //  //println("Nine");
-    //  break;
+    case 16:
+      visu16();
+      break;
     case 17:
       visu17();
-      //println("Nine");
       break;
     //case 18:
     //  visu18();
