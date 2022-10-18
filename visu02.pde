@@ -1,4 +1,4 @@
-void visu2() {
+void visu02() {
   fill(255);
   stroke(255, s2.getChannel(4));
 

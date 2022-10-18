@@ -1,4 +1,4 @@
-void visu3(){
+void visu03(){
   float wave=tan(radians(frameCount)*height/20);
   stroke(255);
   background(s2.getChannel(4)/4, 255);

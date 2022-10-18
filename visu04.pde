@@ -1,4 +1,4 @@
-void visu4(){
+void visu04(){
    background(s2.getChannel(4)/4, 255);
 
   

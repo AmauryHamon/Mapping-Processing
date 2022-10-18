@@ -1,4 +1,4 @@
-void visu7() {
+void visu07() {
   background(s2.getChannel(10), 255);
 
   float rectangle = 15;

@@ -1,4 +1,4 @@
-void visu8() {
+void visu08() {
   background(s2.getChannel(4)/4, 255);
   noFill();
   stroke(s2.getChannel(42)*8);

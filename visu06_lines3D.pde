@@ -1,4 +1,4 @@
-void visu6(){
+void visu06(){
    background(s2.getChannel(10)/2, 255);
 
   

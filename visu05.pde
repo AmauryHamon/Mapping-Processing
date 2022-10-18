@@ -1,4 +1,4 @@
-void visu5() {
+void visu05() {
   background(s2.getChannel(4)/4, 255);
   fill(255);
   stroke(255, s2.getChannel(4)/2);
