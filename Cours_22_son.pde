@@ -10,11 +10,12 @@ ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
 void setup() {
   fullScreen(P3D,2);
   //size(1500, 360, P3D);
-  s2 = new Analysor(this,"01 On Repeat.mp3",60);
+  //s2 = new Analysor(this,"01 On Repeat.mp3",60);
   //s2 = new Analysor(this, "Bjarki_-_I_Wanna_Go_Bang_TRIP003.mp3", 60);
   //s2 = new Analysor(this, "Blue Suede.mp3", 60);
   //s2 = new Analysor(this, "Dj Deep - Stressed.mp3", 60);
   //s2 = new Analysor(this, "04 Hey Nafsu.mp3", 60);
+  s2 = new Analysor(this, "09 Dosa Besar.mp3", 60);
 }
 
 void draw() {
