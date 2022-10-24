@@ -1,5 +1,5 @@
 void visu05() {
-  background(s2.getChannel(4)/4, 255);
+  background(s2.getChannel(4)/8, 255);
   fill(255);
   stroke(255, s2.getChannel(4)/2);
 
@@ -9,7 +9,7 @@ void visu05() {
     float wave=tan(radians(frameCount/i))*height/4;
     push();
     translate(i*w-wave, height/2);
-    rect(width/2, 0,s2.getChannel(15), height);
+    rect(width/2, 0,s2.getChannel(37), height);
     pop();
   }
 }
