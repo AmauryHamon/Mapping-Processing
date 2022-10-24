@@ -1,5 +1,5 @@
 void visu07() {
-  background(s2.getChannel(10), 255);
+  background(s2.getPower()*2, 255);
 
   float rectangle = 15;
   float vit = 15;
