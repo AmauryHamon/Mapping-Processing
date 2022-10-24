@@ -1,31 +1,18 @@
+
+void setup11(){
+  for(int i=0;i<100;i++){
+      boxes.add(
+        new BoxSound(i)
+      );
+  }
+}
+
+
 void visu11() {
-  background(s2.getChannel(4)/4, 255);
-  noFill();
-  stroke(s2.getChannel(42)*8);
-  strokeWeight(1);
-  fill(s2.getChannel(15)*4);
-  rectMode(CENTER);
-  int x = 10;
-
-  //push();
-  ////noStroke();
-  //translate(width/2, height/2);
-
-  //rotateX(radians(frameCount)/2);
-  //rect(0, -height/2, s2.getChannel(15)*width/4, height/2);
-  //rect(0, height/2, s2.getChannel(15)*width/4, -height/2);
-  //box(2*s2.getChannel(15),500,500);
-
-  //pop();
   
-  push();
-  translate(width/4,height/2);
-  box(s2.getChannel(15)+x/100,250,250);
-  pop();
-  
-  push();
-  translate(width/4*3,height/2);
-  box(s2.getChannel(15)+x/100,250,250);
-  pop();
-
+    for(int i=0;i<boxes.size();i++){
+      boxes.get(i).draw();
+    }
+   
+    
 }

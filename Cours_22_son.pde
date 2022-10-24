@@ -5,6 +5,7 @@ float vit = 8;
 
 int mode = 1;
 ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
+ArrayList<BoxSound> boxes = new ArrayList<BoxSound>();
 
 
 void setup() {
@@ -16,6 +17,7 @@ void setup() {
   //s2 = new Analysor(this, "Dj Deep - Stressed.mp3", 60);
   //s2 = new Analysor(this, "04 Hey Nafsu.mp3", 60);
   s2 = new Analysor(this, "09 Dosa Besar.mp3", 60);
+  setup11();
 }
 
 void draw() {
