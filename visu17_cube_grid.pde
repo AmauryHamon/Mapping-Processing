@@ -20,10 +20,10 @@ void visu17(){
   float tilesX = 60;
   float tilesY = 60;
 
-  float tileW = width / tilesX*10;
-  float tileH = height / tilesY*10;
+  float tileW = width / tilesX*8;
+  float tileH = height / tilesY*8;
 
-  translate(tileW / 2, tileH / 2);
+  translate(tileW / 4, tileH / 4);
 
   for (int x = 0; x < tilesX; x++) {
     for (int y = 0; y < tilesY; y++) {
