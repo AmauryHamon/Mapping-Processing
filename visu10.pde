@@ -1,29 +1,20 @@
 void visu10() {
+  fill(255);
+  stroke(255, s2.getChannel(4)/2);
+
+  float amount=10;
+  float w= height/amount;
   background(s2.getChannel(4)/4, 255);
-  noFill();
-  stroke(s2.getChannel(42)*8);
-  strokeWeight(1);
-  fill(s2.getChannel(15)*4);
-  rectMode(CENTER);
-
-  push();
-  //noStroke();
-  translate(width/2, height/2);
-
-  rotateX(radians(frameCount)/2);
-  rect(0, -height/2, s2.getChannel(15)*width/4, height/2);
-  rect(0, height/2, s2.getChannel(15)*width/4, -height/2);
-  box(2*s2.getChannel(15),500,500);
-
-  pop();
-  
-  push();
-  translate(width/4,height/2);
-  box(4*s2.getChannel(15),250,250);
-  pop();
-  
-  push();
-  translate(width/4*3,height/2);
-  box(4*s2.getChannel(15),250,250);
-  pop();
+  for (int i=1; i<amount; i++) {
+    float wave=tan(radians(frameCount*i))*width;
+    push();
+    translate(i*w-wave*0.05,height/4 );
+    rect(i, 0,s2.getChannel(15),height/2 );
+    pop();
+    
+    push();
+    translate(i*8*(w-wave/10), height/2);
+    rect(i, height/2,s2.getChannel(25)*2,height );
+    pop();
+  }
 }
