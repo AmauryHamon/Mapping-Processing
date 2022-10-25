@@ -1,3 +1,4 @@
+
 Analysor s1;
 Analysor s2;
 float rectangle = 15;
@@ -6,7 +7,6 @@ float vit = 8;
 int mode = 1;
 ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
 ArrayList<BoxSound> boxes = new ArrayList<BoxSound>();
-
 
 void setup() {
   fullScreen(P3D,2);
@@ -18,6 +18,8 @@ void setup() {
   //s2 = new Analysor(this, "04 Hey Nafsu.mp3", 60);
   s2 = new Analysor(this, "09 Dosa Besar.mp3", 60);
   setup11();
+  setupmidi();
+ 
 }
 
 void draw() {
@@ -135,5 +137,5 @@ void draw() {
    
    
 
-s2.drawPreAnalyse(0, 0, width, 300);
+//s2.drawPreAnalyse(0, 0, width, 300);
 }
