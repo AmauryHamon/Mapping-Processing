@@ -1,5 +1,5 @@
 void visu04(){
-   background(s2.getChannel(4)/4, 255);
+   background(s2.getPower(), 255);
 
   
   for(int i=width/2;i>0;i-=50){  
@@ -13,18 +13,10 @@ void visu04(){
       
       push();
       translate(width/2, 0);
-      line(i*s2.getChannel(15)/5,0,i*s2.getChannel(15)/5,height);
-      line(-i*s2.getChannel(15)/5,0,-i*s2.getChannel(15)/5,height);
-      pop();
-            
-      push();
-      translate(width/2, 0);
-      line(-i*s2.getChannel(72),0,-i*s2.getChannel(72),height);
-      pop();
-      
-      push();
-      translate(width/2, 0);
-      line(i*s2.getChannel(72),0,i*s2.getChannel(72),height);
+      line(i*s2.getChannel(15)/5+wave,0,i*s2.getChannel(15)/5+wave,height);
+      line(-i*s2.getChannel(15)/5+wave,0,-i*s2.getChannel(15)/5+wave,height);
+      //line(-i*s2.getChannel(72),0,-i*s2.getChannel(72),height);
+      //line(i*s2.getChannel(72),0,i*s2.getChannel(72),height);
       pop();
     }
   }
