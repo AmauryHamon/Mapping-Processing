@@ -1,9 +1,9 @@
 void visu17(){
-  background(s2.getChannel(4)/4, 255);
+  background(s2.getPower(), 255);
   noFill();
-  stroke(s2.getChannel(42)*8);
+  stroke(s2.getChannel(43)*8);
   strokeWeight(1);
-  fill(s2.getChannel(15)*4);
+  fill(s2.getPower()*8);
   rectMode(CENTER);
 
   //push(); 
@@ -32,7 +32,7 @@ void visu17(){
       
       pushMatrix();
       translate(tileW * x + wave, tileH * y);
-      box(s2.getChannel(15)+x/100,tileH / 2,tileW);
+      box(s2.getChannel(15)/4+x/100,tileH / 2,tileW);
 
       //ellipse(0,0,tileW / 2,tileH / 2);
       popMatrix();
