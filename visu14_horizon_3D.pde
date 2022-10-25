@@ -5,7 +5,7 @@ void visu14() {
   strokeWeight(1);
   fill(s2.getChannel(4)*4);
   rectMode(CENTER);
-  int x = 10;
+  float space = -250;
   int amount = 10;
   float wave= sin(radians(frameCount));
   int [] v = {1,2,3,4,5};
@@ -38,19 +38,39 @@ void visu14() {
   //}
   
   for (int i=-10000; i<10000; i+=200) {
-    for(int j=250;j<10000;j+=250){
+    for(int j=250;j<1000;j+=250){
     //for(int i=0;i<boxes.size();i++){
     //  boxes.get(i).draw();
     //}
     push();
     translate(i+frameCount*wave/3, height/2, -250);
-    box(s2.getPower()/2, height*0.75, 250);
+    box(s2.getPower(), height, 200);
     pop();
     
     push();
-    translate(i+frameCount*wave/2, height/2, -500);
-    box(s2.getPower()/2, height*0.65, 250);
+    translate(i+frameCount*wave/2, height/2+(wave*i)/4, -500);
+    box(s2.getPower(), height, 200);
     pop();
+    
+    push();
+    translate(i+frameCount*wave/4, height/2, -750);
+    box(s2.getPower(), height, 200);
+    pop();
+    
+    push();
+    translate(i+frameCount*wave/5, height/2, -1000);
+    box(s2.getPower(), height, 200);
+    pop();
+    
+    //push();
+    //translate(i+frameCount*wave/2, height/2, -1250);
+    //box(s2.getPower()/2, height*0.55, 250);
+    //pop();
+    
+    //push();
+    //translate(i+frameCount*wave/2, height/2, -1500);
+    //box(s2.getPower()/2, height*0.55, 1000);
+    //pop();
     }
   }
 
