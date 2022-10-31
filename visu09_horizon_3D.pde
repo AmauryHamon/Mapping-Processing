@@ -1,4 +1,4 @@
-void visu10(float bg) {
+void visu09(float bg) {
   background(bg, 255);
   noFill();
   stroke(s2.getChannel(32)*16);

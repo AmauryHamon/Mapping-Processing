@@ -11,14 +11,14 @@ void keyPressed(){
   if(keyCode==56)mode=8;
   if(keyCode==57)mode=9;
   if(keyCode==48)mode=10;
-  if(keyCode==81)mode=11;
-  if(keyCode==87)mode=12;
-  if(keyCode==69)mode=13;
-  if(keyCode==82)mode=14;
-  if(keyCode==84)mode=15;
-  if(keyCode==89)mode=16;
-  if(keyCode==85)mode=17;
-  if(keyCode==73)mode=18;
-  if(keyCode==79)mode=19;
+  //if(keyCode==81)mode=11;
+  //if(keyCode==87)mode=12;
+  //if(keyCode==69)mode=13;
+  //if(keyCode==82)mode=14;
+  //if(keyCode==84)mode=15;
+  //if(keyCode==89)mode=16;
+  //if(keyCode==85)mode=17;
+  //if(keyCode==73)mode=18;
+  //if(keyCode==79)mode=19;
   //println(keyCode);
 }

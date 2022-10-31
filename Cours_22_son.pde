@@ -83,12 +83,12 @@ void draw() {
   case 10:
     visu10(bg);
     break;
-  case 11:
-    visu11(bg);
-    break;
-  case 12:
-    visu12(bg);
-    break;
+  //case 11:
+    //visu11(bg);
+  //  break;
+  //case 12:
+  //  visu12(bg);
+  //  break;
     //case 13:
     //  visu13();
     //  break;
