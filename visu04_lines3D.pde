@@ -16,7 +16,7 @@ void visu04(float bg) {
       float wave = sin(deg)* sinPower;
       float wave2 = tan(deg) * tanPower;
       float wave3 = cos(deg) * cosPower;
-
+      //y=1200;
       stroke(255);
       strokeWeight(2);
 

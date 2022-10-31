@@ -36,8 +36,15 @@ void controllerChange(int channel, int number, int value) {
   println("Number:"+number);
   println("Value:"+value);
   
-  if(number==58 && value==127)mode--;
-  if(number==59 && value==127)mode++;
+  if(number==58 && value==127){
+    mode--;
+    //if(mode==1)mode=12;  
+  }
+  
+  if(number==59 && value==127){
+    mode++;
+    //if(mode==12)mode=1;
+  }
  
   
  
@@ -62,7 +69,7 @@ void controllerChange(int channel, int number, int value) {
     if(mode==4){
       sinPower = map(value,0,127,0,100);
       cosPower = sinPower;
-      y=1200;
+      
 
     }
   }
@@ -113,8 +120,10 @@ void controllerChange(int channel, int number, int value) {
   if(number==69)mode=6;
   if(number==70)mode=7;
   if(number==71)mode=8;
-
-  
+  if(number==48)mode=9;
+  if(number==49)mode=10;
+  if(number==50)mode=11;
+  if(number==51)mode=12;
   if(number==16){
     //backMode1=map(value,0,128,0,255);
   }

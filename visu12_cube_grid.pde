@@ -17,13 +17,13 @@ void visu12(float bg){
 
   //pop();
   
-  float tilesX = 60;
-  float tilesY = 60;
+  float tilesX = size;
+  float tilesY = size;
 
-  float tileW = width / tilesX*8;
-  float tileH = height / tilesY*8;
+  float tileW = width / tilesX;
+  float tileH = height / tilesY;
 
-  translate(tileW / 4, tileH / 4);
+  translate(tileW / 2, tileH / 2);
 
   for (int x = 0; x < tilesX; x++) {
     for (int y = 0; y < tilesY; y++) {
@@ -32,7 +32,8 @@ void visu12(float bg){
       
       pushMatrix();
       translate(tileW * x + wave, tileH * y);
-      box(s2.getChannel(15)/4+x/100,tileH / 2,tileW);
+      //translate(tileW * x + wave, tileH * y + wave); //Curly waves
+      box(s2.getChannel(15)/4+x,tileH / 2,z);
 
       //ellipse(0,0,tileW / 2,tileH / 2);
       popMatrix();

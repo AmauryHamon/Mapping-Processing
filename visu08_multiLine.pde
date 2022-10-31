@@ -21,7 +21,7 @@ void visu08(float bg) {
   //float wave2= sin(radians(frameCount)*8);
 
   //Default style
-  float wave= tan(radians(frameCount)*tanPower*0.05);
+  float wave= tan(radians(frameCount)*tanPower);
   float wave2= sin(radians(frameCount)*sinPower);
 
 
