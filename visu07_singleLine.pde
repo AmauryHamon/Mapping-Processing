@@ -28,7 +28,7 @@ void visu07(float bg) {
 
   for (int i=0; i<rows; i++){
     if (frameCount%frequency==0) {
-      boxes.add(new BoxSound(100, -100, height/2, depth*i));
+      boxes.add(new BoxSound(100, x, height/2, depth*i));
     }
   }
 
@@ -39,7 +39,7 @@ void visu07(float bg) {
     boxes.get(i).draw();
     //getting lost in the horizon
     for(int j=0; j<boxes.size();j++){
-      boxes.get(i).z -= 1;
+      //boxes.get(i).z -= 1;
     }
 
     //Pew pew

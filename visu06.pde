@@ -3,7 +3,7 @@ void visu06(float bg) {
   fill(255);
   stroke(255, s2.getChannel(4)/2);
 
-  float w= height/amount;
+  float w= width/amount;
   //rectMode(CENTER);
   for (int i=1; i<amount; i++) {
     float wave=tan(radians(frameCount*i))*tanPower;
