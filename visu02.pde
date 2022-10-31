@@ -1,17 +1,26 @@
-void visu02() {
-  fill(255);
-  stroke(255, s2.getChannel(4));
+void visu02(float bg){
+   background(bg);
 
-  float amount=3;
-  float w= width/amount;
-  background(s2.getChannel(4)/4, 255);
-  for (int i=1; i<amount; i++) {
-//  float wave=tan(radians(frameCount*i))*height/20;
-    float wave=tan(radians(frameCount*i))*height/10;
-
-    push();
-    translate(i-wave, height/2);
-    rect(width/2, 0,s2.getChannel(15), height);
-    pop();
+  
+  for(int i=width/2;i>0;i-=50){  
+    for(int j=0;j<height;j++){
+      
+      //float w= (width*4); 
+      //float wave=sin(radians(frameCount)*20);
+      float wave=sin(radians(frameCount)*sinPower);
+      noFill();
+      stroke(255);
+      strokeWeight(s2.getChannel(15)/5);
+      
+      push();
+      translate(width/2, 0);
+      //line(i*s2.getPower()+wave,0,i*s2.getPower()+wave,height);
+      line(i*s2.getPower()+wave,0,i*s2.getPower()+wave,height);
+      line(-i*s2.getChannel(15)*channelIntensity+wave,0,-i*s2.getChannel(15)*channelIntensity+wave,height);
+      //line(-i*s2.getChannel(72),0,-i*s2.getChannel(72),height);
+      //line(i*s2.getChannel(72),0,i*s2.getChannel(72),height);
+      pop();
+    }
   }
+
 }

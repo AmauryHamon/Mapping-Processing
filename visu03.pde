@@ -1,40 +1,20 @@
-void visu03(){
-  float wave=tan(radians(frameCount)*height/20);
+void visu03(float bg) {
+  background(bg);
+  fill(255);
   stroke(255);
-  background(s2.getChannel(4)/4, 255);
-  strokeWeight(1);
-  noFill();
-  
-  push();
-  translate(width/2, height/2);
-  sphere(s2.getChannel(15)*20);
-  sphereDetail(10);
-  rotateX(frameCount);
-  //rotateY(mouseY);
-  pop();
-  stroke(100);
-  
-  
-  push();
-  translate(width/4*3, wave/2*height/20);
-  sphere(s2.getChannel(4)*2);
-  pop();
 
-  push();
-  translate(width/4*3, wave/2*height);
-  sphere(s2.getChannel(4)*2);
-  pop();
+  float w= width/amount;
+  float wave=tan(radians(frameCount))*10;
+  float wave2=sin(radians(frameCount))*800;
 
-  
-  push();
-  translate(width/4, wave*height/20);
-  sphere(s2.getChannel(4)*2);
-  pop();
-  
-  push();
-  translate(width/4, wave/2*height);
-  sphere(s2.getChannel(4)*2);
-  pop();
+  for (int i=1; i<amount; i++) {
+    push();
+    translate(width/2, height/2);
+    rectMode(CENTER);
+    rect(wave2-wave, 0, s2.getPower(), height);
+    rect(wave2+wave*i*1.15, 0, i*wave2/1000, height);
+    rect(-wave2-wave*-i*1.25, 0, i*wave2/1000, height);
 
-  
+    pop();
   }
+}
