@@ -7,7 +7,7 @@ class BoxSound {
   float x, y, z;
   float boxWidth = 50;
   float boxHeight = height*0.87;
-  float boxDepth = 200;
+  float boxDepth = 50;
   
 
   BoxSound(int i, float x, float y, float z) {
@@ -19,6 +19,7 @@ class BoxSound {
 
   void draw() {
     //translate(width/2, height/2);
+    //wave= sin(radians(frameCount*s2.getPower()/2));
     wave= sin(radians(frameCount*s2.getPower()/2));
     fill(255);
     //box(200);
