@@ -1,7 +1,9 @@
 void visu04(float bg) {
-  background(bg);
   float deg = radians(frameCount);
-
+  fill(bg,45);
+  noStroke();
+  rectMode(CORNER);
+  rect(0,0,width,height);
 
   for (int i=width/2; i>0; i-=50) {
     for (int j=0; j<height; j++) {

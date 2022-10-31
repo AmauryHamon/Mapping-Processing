@@ -3,11 +3,11 @@ void visu10(float bg) {
   noFill();
   stroke(s2.getChannel(32)*16);
   strokeWeight(1);
-  fill(s2.getChannel(4)*4);
+  fill(s2.getChannel(4)*channelIntensity);
   rectMode(CENTER);
   float space = -250;
   int amount = 10;
-  float wave= sin(radians(frameCount));
+  float wave= sin(radians(frameCount))*sinPower/1000;
   int [] v = {1, 2, 3, 4, 5};
 
   //push();
@@ -44,22 +44,22 @@ void visu10(float bg) {
       //}
       push();
       translate(i+frameCount*wave/3, height/2, -250);
-      box(s2.getPower(), height, 200);
+      box(channelIntensity*s2.getPower(), height, z);
       pop();
 
       push();
       translate(i+frameCount*wave/2, height/2+(wave*i)/4, -500);
-      box(s2.getPower(), height, 200);
+      box(channelIntensity*s2.getPower(), height, z);
       pop();
 
       push();
       translate(i+frameCount*wave/4, height/2, -750);
-      box(s2.getPower(), height, 200);
+      box(channelIntensity*s2.getPower(), height, z);
       pop();
 
       push();
       translate(i+frameCount*wave/5, height/2, -1000);
-      box(s2.getPower(), height, 200);
+      box(channelIntensity*s2.getPower(), height, z);
       pop();
 
       //push();

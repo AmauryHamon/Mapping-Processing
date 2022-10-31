@@ -53,6 +53,9 @@ void controllerChange(int channel, int number, int value) {
   }
   if(number==19){
     sinPower = map(value,0,127,100,8000);
+    if(mode==2|mode==3){
+      sinPower = map(value,0,127,100,900);
+    }
   }
   if(number==20){
     tanPower = map(value,0,127,100,8000);
@@ -69,10 +72,14 @@ void controllerChange(int channel, int number, int value) {
     bgPower = map(value,0,127,0.1,4);
   }
   if(number==1){
+    x = map(value,0,127,0,width);
   }
   if(number==2){
+    y = map(value,0,127,0,height);
   }
   if(number==3){
+    z = map(value,0,127,0,2000);
+
   }
   if(number==4){
   }

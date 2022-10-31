@@ -6,23 +6,23 @@ void visu08(float bg) {
   width/2.0, height/2.0, zcam, 
   0, 1, 0);
   
-  zcam-=2;
+  //zcam-=2;
   
-  background(bg, 255);
+  background(bg);
   noFill();
   stroke(255);
   strokeWeight(1);
   fill(s2.getChannel(4)*2);
   rectMode(CENTER);
   float space = -250;
-  int amount = 10;
+  
   //Gélatine style
   //float wave= tan(radians(frameCount)*2);
   //float wave2= sin(radians(frameCount)*8);
 
   //Default style
-  float wave= tan(radians(frameCount*0.05));
-  float wave2= sin(radians(frameCount));
+  float wave= tan(radians(frameCount)*tanPower*0.05);
+  float wave2= sin(radians(frameCount)*sinPower);
 
 
   int [] v = {1, 2, 3, 4, 5};

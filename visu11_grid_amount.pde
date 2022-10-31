@@ -3,8 +3,8 @@ void visu11(float bg) {
   fill(#F1F1F1, 200);
   noStroke();
 
-  float waveX = sin(radians(frameCount * s2.getChannel(32)/16 ));
-  float waveY = cos(radians(frameCount * s2.getChannel(32)/16 ));
+  float waveX = sin(radians(frameCount))* s2.getChannel(32)*channelIntensity/100;
+  float waveY = cos(radians(frameCount))* s2.getChannel(32)*channelIntensity/100;
   
   float tilesX = int(map(waveX,-1,1,1,16));
   float tilesY = int(map(waveY,-1,1,1,9));

@@ -3,7 +3,7 @@ Analysor s1;
 Analysor s2;
 float rectangle = 15;
 float vit = 8;
-
+float x,y,z;
 
 int mode = 1;
 ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
@@ -153,7 +153,7 @@ void draw() {
   //}else if(mode==19){
   //  visu19();
   //}
-
+  camera();
   pushMatrix();
   hint(DISABLE_DEPTH_TEST);
   fill(255,255,0);
@@ -161,12 +161,15 @@ void draw() {
   text("POTARDS",100,30);
   text("1. amount : "+amount,100,45);
   text("2. channelIntensity :"+channelIntensity,100,60);
-  text("3. speed : "+speed,100,75);
+  //text("3. speed : "+speed,100,75);
   text("4. sinPower : "+sinPower,100,90);
   text("5. tanPower : "+tanPower,100,105);
   
   text("SLIDERS",300,30);
   text("1. bgPower : "+bgPower,300,45);
+  text("2. x : "+x,300,60);
+  text("3. y : "+y,300,75);
+  text("4. z : "+z,300,90);
 
 
 

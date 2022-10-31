@@ -5,7 +5,7 @@ void visu01(float bg) {
   background(bg);
   for (int i=1; i<amount; i++) {
 //  float wave=tan(radians(frameCount*i))*height/20;
-    float wave=tan(radians(frameCount*i))*speed;
+    float wave=tan(radians(frameCount*i))*tanPower/100;
 
     push();
     translate(i-wave, 0);
