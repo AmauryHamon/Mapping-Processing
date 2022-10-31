@@ -17,6 +17,11 @@ void visu04(float bg) {
       push();
       translate(width/2, height/2);
       rotateX(deg);
+      //line(i*8+wave, 0, i*8+wave, y);
+      //line(-i*8+wave, 0, -i*8+wave, y);
+      //line(-i*8-wave, 0, -i*8-wave, -y);
+      //line(-i*8+wave, 0, -i*8+wave, -y);
+
       line(i*8+wave, 0, i*8+wave, height/4);
       line(i*8+wave*2, height/4, i*8+wave*2, height/2);
       line(-i*8+wave2, height/4, -i*8+wave2, height/2);
@@ -24,7 +29,7 @@ void visu04(float bg) {
       line(-i*16+wave/8, height/2, -i*16+wave/8, height);
       line(i*wave2/100+wave, 0, i*wave2/100+wave, -height);
       line(-i*wave2/100+wave, 0, -i*wave2/100+wave, -height);
-      //line(-i*wave2/1000+s2.getChannel(60),0,-i*wave2/1000+s2.getChannel(60),-height);
+      line(-i*wave2/1000+s2.getChannel(60),0,-i*wave2/1000+s2.getChannel(60),-height);
 
       pop();
     }

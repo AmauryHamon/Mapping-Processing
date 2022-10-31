@@ -44,6 +44,9 @@ void controllerChange(int channel, int number, int value) {
   //Potards
   if(number==16){
     amount = map(value,0,127,1.1,20);
+    if(mode==2){
+      amount = map(value,0,127,1.1,10);
+    }
   }
   if(number==17){
     channelIntensity = map(value,0,127,0.1,8);
@@ -54,7 +57,7 @@ void controllerChange(int channel, int number, int value) {
   if(number==19){
     sinPower = map(value,0,127,100,8000);
     if(mode==2|mode==3){
-      sinPower = map(value,0,127,100,900);
+      sinPower = map(value,0,127,100,2700);
     }
   }
   if(number==20){
