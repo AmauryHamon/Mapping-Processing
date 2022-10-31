@@ -38,11 +38,65 @@ void controllerChange(int channel, int number, int value) {
   
   if(number==58 && value==127)mode--;
   if(number==59 && value==127)mode++;
+ 
   
+ 
+  //Potards
+  if(number==16){
+    amount = map(value,0,127,1.1,20);
+  }
+  if(number==17){
+    channelIntensity = map(value,0,127,0.1,8);
+  }
+  if(number==18){
+    speed = map(value, 0,127,1,100);
+  }
+  if(number==19){
+    sinPower = map(value,0,127,100,8000);
+  }
+  if(number==20){
+    tanPower = map(value,0,127,100,8000);
+  }
+  if(number==21){
+  }
+  if(number==22){
+  }
+  if(number==23){
+  }
   
+  //Sliders
+  if(number==0){
+    bgPower = map(value,0,127,0.1,4);
+  }
+  if(number==1){
+  }
+  if(number==2){
+  }
+  if(number==3){
+  }
+  if(number==4){
+  }
+  if(number==5){
+  }
+  if(number==6){
+  }
+  if(number==7){
+  }
+  if(number==8){
+  }
+  
+  //R Buttons -> Scenes from 1 to n
   if(number==64)mode=1;
+  if(number==65)mode=2;
+  if(number==66)mode=3;
+  if(number==67)mode=4;
+  if(number==68)mode=5;
+  if(number==69)mode=6;
+  if(number==70)mode=7;
+  if(number==71)mode=8;
+
   
   if(number==16){
-    backMode1=map(value,0,128,0,255);
+    //backMode1=map(value,0,128,0,255);
   }
 }
