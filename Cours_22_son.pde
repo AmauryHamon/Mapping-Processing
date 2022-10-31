@@ -4,6 +4,7 @@ Analysor s2;
 float rectangle = 15;
 float vit = 8;
 float x,y,z;
+float size=100;
 
 int mode = 1;
 ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
@@ -18,6 +19,7 @@ float deg;
 
 float sinPower;
 float tanPower;
+float cosPower;
 
 float speed;
 
@@ -161,7 +163,7 @@ void draw() {
   text("POTARDS",100,30);
   text("1. amount : "+amount,100,45);
   text("2. channelIntensity :"+channelIntensity,100,60);
-  //text("3. speed : "+speed,100,75);
+  text("3. size : "+size,100,75);
   text("4. sinPower : "+sinPower,100,90);
   text("5. tanPower : "+tanPower,100,105);
   
