@@ -50,14 +50,22 @@ void controllerChange(int channel, int number, int value) {
   }
   if(number==17){
     channelIntensity = map(value,0,127,0.1,8);
+    if(mode==5) channelIntensity = map(value,0,127,0,8);
+
   }
   if(number==18){
-    speed = map(value, 0,127,1,100);
+    size = map(value, 0,127,1,100);
+    if(mode==5)size = map (value,0,127,100,500);
   }
   if(number==19){
     sinPower = map(value,0,127,100,8000);
     if(mode==2|mode==3){
       sinPower = map(value,0,127,100,2700);
+    }
+    if(mode==4){
+      sinPower = map(value,0,127,100,2700);
+      cosPower = sinPower;
+
     }
   }
   if(number==20){
@@ -76,9 +84,12 @@ void controllerChange(int channel, int number, int value) {
   }
   if(number==1){
     x = map(value,0,127,0,width);
+    if(mode==5)x = map(value,0,127,0,width);    
   }
   if(number==2){
     y = map(value,0,127,0,height);
+    if(mode==5)y = map(value,0,127,0,height);    
+
   }
   if(number==3){
     z = map(value,0,127,0,2000);
