@@ -1,15 +1,14 @@
-# PROCESSING WORKSHOP – Mapping Festival
+# Light in Darkness, Amaury Hamon
+2022 PROCESSING WORKSHOP – Mapping Festival, w/ Damien Bais & Nicolas Baldran
 
-This project is part of the Processing Workshop given by Damien Bays and assisted by Nicolas Baldran for the 2022 Mapping Festival.
-
-My contribution is a live vjing project about light and darkness, only using black and white with primary shapes. With the input of a controller, the results is currently played live while ajusting parameters such as amount, size, positions, wave intensity, etc. 
+This is a live vjing project about light and darkness, only using black and white with primary shapes. With the help of a controller, the results are currently played live while ajusting parameters such as amount, size, positions, wave intensity, etc. 
 
 To this idea of minimalism, I matched the visuals with an audio source reminiscent of this extreme and brutal simplicity.
 
-The sound used "Dosa Besar", from Gabber Modus Operandi, an indonesian gabber duo
+## Credits
+The sound used *Dosa Besar*, is from *Gabber Modus Operandi*, an indonesian gabber duo defining their practice as Post-Alay Holistic Sound Healing.
 [Gabber Modus Operandi - Dosa Besar](https://www.youtube.com/watch?v=Gnsjcu6G8E4&t=116s&ab_channel=AdityaSuryaTaruna)
 [Free download](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbkNTLXNDWDhLNlVRNVRQUEhybURUM2tMdkdsUXxBQ3Jtc0trRTFfdGRMdHlpbm5ic0pzVGRzTjdrTlI4cUhuRmViSjdUajh5OHFwQTRreWVWeDhIQlhRTDQ5Y0lSa1hfUVQ0aTZGR0tzMVBsNVFobkhtWDhxVkNscUh2R2J3eDZyYk83MVVyaGJfTElOaDQ2RFNmQQ&q=http%3A%2F%2Fyesnowave.com%2Freleases%2Fyesno091%2F&v=UWZUgtR1T7U)
-
 
 ## Visual References 
 [1958 – Len Lye – Free Radicals](https://www.youtube.com/watch?v=LpAOHBHxaSM&ab_channel=optimisticwombatninja08)
