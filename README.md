@@ -13,8 +13,11 @@ The sound used *Dosa Besar*, is from *Gabber Modus Operandi*, an indonesian gabb
 
 ## Visual References 
 [1958 – Len Lye – Free Radicals](https://www.youtube.com/watch?v=LpAOHBHxaSM&ab_channel=optimisticwombatninja08)
+
 [1960 – Norman McLaren: Lines vertical](https://www.youtube.com/watch?v=R_pY8Kq9iOA&ab_channel=FlorianGoltz)
+
 [2011 – Mondkopf Live, Visuals by Trafik](https://youtu.be/rMnbtF-30Qc?t=18)
+
 [2021 – Ryoji Ikeda](https://www.youtube.com/watch?v=cywFvcRR-QI&ab_channel=NOWNESS)
 
 ## Audio References: Industrial, Post-Punk…
