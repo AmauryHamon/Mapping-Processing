@@ -27,7 +27,7 @@ void noteOff(int channel, int pitch, int velocity) {
   println("Velocity:"+velocity);
 }
 
-void controllerChange(int channel, int number, int value) {
+void controllerChange(int channel, int number, int value) {  
   // Receive a controllerChange
   println();
   println("Controller Change:");
@@ -49,6 +49,7 @@ void controllerChange(int channel, int number, int value) {
   
  
   //Potards
+  //amount
   if(number==10 && channel==0){
     amount = map(value,0,127,1.1,20);
     if(mode==2)amount = map(value,0,127,1.1,10);
@@ -56,36 +57,32 @@ void controllerChange(int channel, int number, int value) {
 
     if(mode==6)amount = map(value,0,127,10,20);
   }
+  //intensité/Sensibilité
   if(number==10 && channel==1){
     channelIntensity = map(value,0,127,0.1,8);
     if(mode==5) channelIntensity = map(value,0,127,0,8);
-
   }
+  //échelle
   if(number==10 && channel==2){
     size = map(value, 0,127,1,100);
     if(mode==5)size = map (value,0,127,100,500);
   }
+  //Sinus
   if(number==10 && channel==3){
     sinPower = map(value,0,127,100,8000);
     if(mode==2|mode==3)sinPower = map(value,0,127,100,2700);
     if(mode==4){
       sinPower = map(value,0,127,0,100);
       cosPower = sinPower;
-      
-
     }
   }
+  //Tan
   if(number==10 && channel==4){
     tanPower = map(value,0,127,100,8000);
   }
-  //if(number==21){
-  //}
-  //if(number==22){
-  //}
-  //if(number==23){
-  //}
-  
+ 
   //Sliders
+  //background
   if(channel==0 && number==7){
     bgPower = map(value,0,127,0.1,4);
   }
@@ -96,11 +93,12 @@ void controllerChange(int channel, int number, int value) {
   if(channel==2 && number==7){
     y = map(value,0,127,0,height);
     if(mode==5)y = map(value,0,127,0,height);    
-
   }
   if(channel==3 && number==7){
     z = map(value,0,127,0,2000);
-
+  }
+  if(channel==4 && number==7){
+    opacity = map(value,0,127,0,255);
   }
   if(number==4){
   }

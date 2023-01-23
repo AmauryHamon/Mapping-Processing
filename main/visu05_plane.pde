@@ -7,14 +7,15 @@ void visu05(float bg) {
   //rect(0, 0, width, height);
   float rectangle = 15;
   float vit = 15;
-  float transparency = 10;
+  
 
   noFill();
-  stroke(255,transparency);
-  fill(255, transparency);
+  stroke(opacity);
+  fill(opacity);
   strokeWeight(1);
   rectMode(CENTER);
-  fill(s2.getPower()*8, transparency);
+  translate(width/2, height/2);
+  fill(s2.getPower()*8);
 
   float tilesX = amount;
   float tilesY = amount;
@@ -22,12 +23,25 @@ void visu05(float bg) {
   float tileW = width/tilesX;
   float tileH = height/tilesY;
 
-  for(int x=0; x<tilesX; x++){
-    for(int y=0; y<tilesY; y++){
-      rect(x*tileW+(s2.getChannel(int(random(25,55)))*channelIntensity/random(5,25)), y*tileH+(s2.getChannel(int(random(25,55)))), tilesX+size, tilesY+size, vit);
+  for (int x=0; x<tilesX; x++) {
+    for (int y=0; y<tilesY; y++) {
+      rect(x*tileW+(s2.getChannel(int(random(25, 55)))*channelIntensity/random(5, 25)), y*tileH+(s2.getChannel(int(random(25, 55)))*channelIntensity/random(5, 25)), tilesX+size, tilesY+size, vit);
+      rect(-x*tileW+(s2.getChannel(int(random(25, 55)))*channelIntensity/random(-25, -5)), y*tileH+(s2.getChannel(int(random(25, 55))))*channelIntensity, tilesX+size, tilesY+size, vit);
+      rect(x*tileW+(s2.getChannel(int(random(25, 55)))*channelIntensity*random(5, 10)), -y*tileH+(s2.getChannel(int(random(25, 55))))*channelIntensity/random(5, 25), tilesX+size, tilesY+size, vit);
+      rect(-x*tileW+(s2.getChannel(int(random(25, 55)))*channelIntensity*random(-5, 5)), -y*tileH+(s2.getChannel(int(random(25, 55))))*channelIntensity/random(5, 25), tilesX+size, tilesY+size, vit);
     }
   }
-      
+  //for (int x=0; x>-tilesX; x++) {
+  //  for (int y=0; y>-tilesY; y++) {
+  //    rect(x*tileW+(s2.getChannel(int(random(25, 55)))*channelIntensity/random(5, 25)), y*tileH+(s2.getChannel(int(random(25, 55)))), tilesX+size, tilesY+size, vit);
+  //    rect(-x*tileW+(s2.getChannel(int(random(25, 55)))*channelIntensity/random(-25, -5)), y*tileH+(s2.getChannel(int(random(25, 55))))*channelIntensity, tilesX+size, tilesY+size, vit);
+  //    rect(x*tileW+(s2.getChannel(int(random(25, 55)))*channelIntensity*random(5, 10)), -y*tileH+(s2.getChannel(int(random(25, 55))))*channelIntensity, tilesX+size, tilesY+size, vit);
+  //    rect(-x*tileW+(s2.getChannel(int(random(25, 55)))*channelIntensity*random(-5, 5)), -y*tileH+(s2.getChannel(int(random(25, 55))))*channelIntensity, tilesX+size, tilesY+size, vit);
+  //  }
+  //}
+  noStroke();
+  fill(0, 20);
+  rect(0, 0, width, height);
 
   //if (rectangle<width) {
   //  rectangle +=vit+100;
