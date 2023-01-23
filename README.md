@@ -1,3 +1,4 @@
+![Preview image](/press/img/Capture%20d%E2%80%99%C3%A9cran%202022-11-02%20%C3%A0%2009.00.45.png)
 # Light in Darkness, Amaury Hamon
 2022 PROCESSING WORKSHOP – Mapping Festival, w/ Damien Bais & Nicolas Baldran
 
