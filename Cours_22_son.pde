@@ -3,7 +3,7 @@ Analysor s1;
 Analysor s2;
 float rectangle = 15;
 float vit = 8;
-float x,y,z;
+float x, y, z;
 float size=100;
 
 int mode = 1;
@@ -26,9 +26,10 @@ float speed;
 
 
 void setup() {
-  fullScreen(P3D, 1);
- 
+  fullScreen(P3D, 2);
   //size(1500, 360, P3D);
+  
+  //Select Track here:
   //s2 = new Analysor(this,"01 On Repeat.mp3",60);
   //s2 = new Analysor(this, "Bjarki_-_I_Wanna_Go_Bang_TRIP003.mp3", 60);
   //s2 = new Analysor(this, "Blue Suede.mp3", 60);
@@ -83,12 +84,12 @@ void draw() {
   case 10:
     visu10(bg);
     break;
-  //case 11:
+    //case 11:
     //visu11(bg);
-  //  break;
-  //case 12:
-  //  visu12(bg);
-  //  break;
+    //  break;
+    //case 12:
+    //  visu12(bg);
+    //  break;
     //case 13:
     //  visu13();
     //  break;
@@ -156,27 +157,22 @@ void draw() {
   //  visu19();
   //}
   camera();
-  //pushMatrix();
-  //hint(DISABLE_DEPTH_TEST);
-  //fill(255,255,0);
-  //text("mode : "+mode,30,30);
-  //text("POTARDS",100,30);
-  //text("1. amount : "+amount,100,45);
-  //text("2. channelIntensity :"+channelIntensity,100,60);
-  //text("3. size : "+size,100,75);
-  //text("4. sinPower : "+sinPower,100,90);
-  //text("5. tanPower : "+tanPower,100,105);
-  
-  //text("SLIDERS",300,30);
-  //text("1. bgPower : "+bgPower,300,45);
-  //text("2. x : "+x,300,60);
-  //text("3. y : "+y,300,75);
-  //text("4. z : "+z,300,90);
-
-
-
-
-  //hint(ENABLE_DEPTH_TEST);
-  //popMatrix();
+  pushMatrix();
+    hint(DISABLE_DEPTH_TEST);
+    fill(255, 255, 0);
+    text("mode : "+mode, 30, 30);
+    text("POTARDS", 100, 30);
+    text("1. amount : "+amount, 100, 45);
+    text("2. channelIntensity :"+channelIntensity, 100, 60);
+    text("3. size : "+size, 100, 75);
+    text("4. sinPower : "+sinPower, 100, 90);
+    text("5. tanPower : "+tanPower, 100, 105);
+    text("SLIDERS", 300, 30);
+    text("1. bgPower : "+bgPower, 300, 45);
+    text("2. x : "+x, 300, 60);
+    text("3. y : "+y, 300, 75);
+    text("4. z : "+z, 300, 90);
+    hint(ENABLE_DEPTH_TEST);
+  popMatrix();
   //s2.drawPreAnalyse(0, 0, width, 300);
 }
