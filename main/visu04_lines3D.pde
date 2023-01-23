@@ -7,11 +7,6 @@ void visu04(float bg) {
 
   for (int i=1; i<width/2; i+=90) {
     for (int j=0; j<amount; j++) {
-      
-      
-      
-
-
       //float w= (width*4);
       float wave = sin(deg)* sinPower;
       float wave2 = tan(deg) * tanPower;

@@ -114,7 +114,6 @@ public class Analysor {
         // draw a rectangle for each average, multiply the value by spectrumScale so we can see it better
         stroke(100);
         line(int(margeV+x+i*sLarg), y+h-margeH, int(margeV+x+i*sLarg), y+h-margeH-100);
-        fill(255);
         noStroke();
         rect(int(margeV+x+i*sLarg), y+h-margeH, int(sLarg), - fftLin.getAvg(i)*senbility);
 

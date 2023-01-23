@@ -1,12 +1,12 @@
 void visu03(float bg) {
   noStroke();
-  fill(bg,15);
+  fill(bg, 15);
   rectMode(CORNER);
-  rect(0,0,width,height);
-    
+  rect(0, 0, width, height);
+
   fill(255);
   stroke(255);
-  
+
 
   float w= width/amount;
   float wave=tan(radians(frameCount))*tanPower;

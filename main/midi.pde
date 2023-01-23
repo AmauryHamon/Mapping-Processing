@@ -52,6 +52,8 @@ void controllerChange(int channel, int number, int value) {
   if(number==10 && channel==0){
     amount = map(value,0,127,1.1,20);
     if(mode==2)amount = map(value,0,127,1.1,10);
+    if(mode==5)amount = map(value,0,127,1,10);
+
     if(mode==6)amount = map(value,0,127,10,20);
   }
   if(number==10 && channel==1){
