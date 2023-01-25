@@ -59,7 +59,7 @@ void controllerChange(int channel, int number, int value) {
   }
   //intensité/Sensibilité
   if(number==10 && channel==1){
-    channelIntensity = map(value,0,127,0.1,8);
+    channelIntensity = map(value,0,127,0,8);
     if(mode==5) channelIntensity = map(value,0,127,0,8);
   }
   //échelle
@@ -83,6 +83,9 @@ void controllerChange(int channel, int number, int value) {
  
   //Sliders
   //background
+  if(channel==0 && number==28){
+    opacity = map(value,0,127,0,255);
+  }
   if(channel==0 && number==7){
     bgPower = map(value,0,127,0.1,4);
   }
@@ -97,9 +100,7 @@ void controllerChange(int channel, int number, int value) {
   if(channel==3 && number==7){
     z = map(value,0,127,0,2000);
   }
-  if(channel==4 && number==7){
-    opacity = map(value,0,127,0,255);
-  }
+  
   if(number==4){
   }
   if(number==5){
