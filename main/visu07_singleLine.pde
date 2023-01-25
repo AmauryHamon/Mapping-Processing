@@ -1,18 +1,3 @@
-
- 
-void setup07() {
-
-  //int shapeamount = 100 ;
-
-  //for(int i=0;i<shapeamount;i++){
-  //    boxes.add(
-  //      new BoxSound(i, shapeamount*i,height/2,0)
-  //    );
-  //}
-}
-
-
-
 void visu07(float bg) {
   background(bg);
 
