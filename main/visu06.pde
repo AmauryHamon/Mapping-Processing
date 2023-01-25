@@ -1,7 +1,7 @@
 void visu06(float bg) {
   background(bg);
-  fill(255);
-  stroke(255, s2.getChannel(4)/2);
+  fill(opacity);
+  stroke(opacity, s2.getChannel(4)/2);
 
   float w= width/amount;
   //rectMode(CENTER);

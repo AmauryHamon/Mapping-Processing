@@ -13,7 +13,7 @@ class Rectangle {
   }
 
   void draw() {
-    stroke(255);
+    stroke(opacity);
     strokeWeight(1);
     //strokeWeight(s2.getChannel(4)*1.05);    
     strokeCap(PROJECT);

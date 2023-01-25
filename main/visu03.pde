@@ -3,10 +3,8 @@ void visu03(float bg) {
   fill(bg, 15);
   rectMode(CORNER);
   rect(0, 0, width, height);
-
-  fill(255);
-  stroke(255);
-
+  fill(opacity);
+  stroke(opacity);
 
   float w= width/amount;
   float wave=tan(radians(frameCount))*tanPower;

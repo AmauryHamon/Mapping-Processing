@@ -102,7 +102,7 @@ public class Analysor {
       fill(0);
       rect(x, y, w, h);
 
-      fill(255);
+      fill(opacity);
       text("Graphic Analyser \nHelper Class for student "+"\nSensibility : "+senbility, x+20, y+20);
 
       text("Power : "+int(getPower()),x+margeH+500,y+margeV/2+10);
@@ -202,10 +202,10 @@ public class Analysor {
       debug=!debug;
     }
     if (e.getAction()==e.RELEASE && e.getKeyCode()==38) {
-      senbility+=.5;
+      senbility+=.2;
     }
     if (e.getAction()==e.RELEASE && e.getKeyCode()==40) {
-      senbility-=.5;
+      senbility-=.2;
     }
   }
 

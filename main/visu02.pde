@@ -9,7 +9,7 @@ void visu02(float bg){
       //float wave=sin(radians(frameCount)*20);
       float wave=sin(radians(frameCount)) * sinPower;
       noFill();
-      stroke(255);
+      stroke(opacity);
       strokeWeight(s2.getChannel(15)/5);
       
       push();

@@ -10,7 +10,7 @@ void visu08(float bg) {
   
   background(bg);
   noFill();
-  stroke(255);
+  stroke(opacity);
   strokeWeight(1);
   fill(s2.getChannel(4)*2);
   rectMode(CENTER);

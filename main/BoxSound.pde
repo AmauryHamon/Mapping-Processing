@@ -21,14 +21,14 @@ class BoxSound {
     //translate(width/2, height/2);
     //wave= sin(radians(frameCount*s2.getPower()/2));
     wave= sin(radians(frameCount*s2.getPower()/2));
-    fill(255);
+    fill(opacity);
     //box(200);
     
     //x = frameCount*wave/v[index];
     //y = wave;
     //z =- 250;
     noFill();
-    stroke(255);
+    stroke(opacity);
     strokeWeight(1);
     fill(s2.getPower()*4);
     //rectMode(CENTER);

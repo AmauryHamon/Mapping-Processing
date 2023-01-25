@@ -1,5 +1,5 @@
 void visu09(float bg) {
-  background(bg, 255);
+  background(bg, opacity);
   noFill();
   stroke(s2.getChannel(32)*16);
   strokeWeight(1);
